@@ -1,0 +1,47 @@
+{
+	"info": {
+		"_postman_id": "ab2a065e-ee63-47c2-8add-4a7dbf79f53f",
+		"name": "FixerIO",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Convert",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://data.fixer.io/api/symbols?access_key={{FIXER_API_KEY}}",
+					"protocol": "http",
+					"host": [
+						"data",
+						"fixer",
+						"io"
+					],
+					"path": [
+						"api",
+						"symbols"
+					],
+					"query": [
+						{
+							"key": "to",
+							"value": "JPY",
+							"disabled": true
+						},
+						{
+							"key": "amount",
+							"value": "10",
+							"disabled": true
+						},
+						{
+							"key": "access_key",
+							"value": "{{FIXER_API_KEY}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
